@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff9900,
+    #ffcc00,
+    #33cc33,
+    #3399ff,
+    #9900cc
+  );
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+#search-box {
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+
+#suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+#suggestions-list li:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
